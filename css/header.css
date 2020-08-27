@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+i,
+em {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+/* 全局的颜色 */
+.meizu-body{
+    height: 82px;
+    background: tomato;
+    position: relative;
+}
+.header {
+    width: 1244px;
+    height: 82px;
+    /* background-color: chartreuse; */
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.header .header-logo h1 {
+    font-size: 50px;
+    float: left;
+    width: 125px;
+    height: 80px;
+    margin-right: 97px;
+    margin-top: 10px;
+}
+
+.header .header-logo h1:hover {
+    cursor: pointer;
+}
+
+.header .header-logo h1 a {
+    color: blue;
+}
+
+.header .header-center {
+    width: 758px;
+    height: 82px;
+    /* background:blueviolet; */
+    float: left;
+    font-size: 13px;
+
+}
+.header .header-center ul li{
+    float: left;
+    
+}
+
+.header .header-center ul li .xiuxiu{
+    width: 1200px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    /* 这里不能用display,因为display不支持过渡 */
+    /* background: red; */
+    position: absolute;
+    top:82px;
+    left: 0;
+    z-index: 100;
+    background: white;
+}
+.header .header-center ul li:hover div{
+    height: 240px;
+}
+.header .header-center ul li .xiuxiu img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.header-center ul li div dl{
+    width: 150px;
+    float: left;
+    /* border: 1px solid black; */
+}
+.header-center ul li div dl:hover{
+    cursor: pointer;
+}
+.header-center ul li div dl span{
+    display: inline-block;
+    text-align: center;
+    margin-left:35px;
+}
+.header-center ul li div dl p{
+    margin-left:40px;
+}
+
+
+.header .header-center ul li a {
+    float: left;
+    /* 字体居中 */
+    line-height: 82px;
+    margin: 0 20px;
+    color: #3a3134;
+}
+
+.header .header-center ul li a:hover {
+    cursor: pointer;
+    color: blue;
+
+}
+
+
+
+/* input框 */
+.seacher {
+    width: 170px;
+    height: 82px;
+    /* background:red; */
+    float: left;
+    margin-left: 11px;
+    margin-right: 19px;
+}
+
+.seacher-1 {
+    width: 170px;
+    height: 30px;
+    /* background-color: chartreuse; */
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+.seacher .seacher-1 input {
+    width: 127px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 6px;
+    border: none;
+    /* 去掉input输入框线 */
+    outline:none 
+}
+
+.seacher .seacher-1 .icon-fangdajing {
+    font-size: 17px;
+    color: #717171;
+}
+
+.seacher .seacher-1 .icon-fangdajing {
+    cursor: pointer;
+}
+
+.header-xiaoren .icon-huiyuan {
+    float: left;
+    font-size: 20px;
+    margin-top: 31px;
+    position: relative;
+}
+.header-xiaoren {
+    cursor: pointer;
+}
+.header-xiaoren .xyin{
+    background: white;
+    position: absolute;
+    width:120px;
+    height: 0px;
+    top:40px;
+    left: -45px;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 100;
+   
+}
+.header-xiaoren:hover .xyin{
+    height: 180px;
+   
+}
+.header-xiaoren .xyin a{
+    color: black;
+    font-size: 12px;
+    display: inline;
+    line-height: 40px;
+}
+.header-xiaoren .xyin a:hover {
+    color: blue;
+}
+.header-car {
+
+    position: relative;
+    float: right;
+    margin: 30px 0 0 8px;
+    width: 29px;
+    height: 29px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.header-car em {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    height: 15px;
+    border-radius: 50%;
+    background: #c00;
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+    text-indent: 0;
+}
+.header-car div{
+    width: 300px;
+    height: 0;
+    background: greenyellow;
+    transition: 0.5s;
+    overflow: hidden;
+    position: absolute;
+    top: 45px;
+    left: -280px;
+    z-index: 100;
+    
+   
+}
+.header-car:hover div{
+    height: 150px;
+}
+.header-car div img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+.header-car div p:nth-of-type(1){
+    position: absolute;
+    top: 50px;
+    left:100px;
+    
+}
+.header-car div p:nth-of-type(2){
+    position: absolute;
+    top: 80px;
+    left:100px;
+  
+}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" name="username"  class="moni" placeholder="手机号">
+        <span id="span"></span><br>
+      
+        <input type="button" name="" id="btn" value="注册">
+</body>
+</html>
+<script>
+    //正则
+    var regNum = /^\d{1,5}$/;
+    let flagnum = false;
+    var oMoni = document.querySelectorAll(".moni");
+    var oSpan = document.querySelector("#span");
+    oMoni[0].onblur = function(){
+        if(regNum.test(oMoni[0].value)){
+            oSpan.innerHTML="没问题";
+            flagnum = true;
+
+        }else{
+            oSpan.innerHTML="有问题";
+            flagnum = false;
+        }
+    }
+
+    // ajax
+    let oBtn = document.querySelector("#btn");
+    oBtn.onclick = function(){
+        if(flagnum){
+            //1
+            let xhr = new XMLHttpRequest();
+            //2
+            xhr.open("POST","moni.php",true);
+             //请求头,将数据以form表单的方式(post)传参
+		    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            //4
+            xhr.onreadystatechange=function(){
+			 if(xhr.status==200&&xhr.readyState==4){
+				 fun(xhr.responseText)
+			 }
+		 }
+            xhr.send("username="+oMoni[0].value);
+
+        }
+    }
+
+    //php与ajax连用时,echo返回的是xhr.responseText的数据
+    function fun(str){
+        if(str=="1"){
+            alert("手机号码已经注册")
+        }else if(str=="0"){
+            alert("注册成功");
+        }
+    }
+</script>

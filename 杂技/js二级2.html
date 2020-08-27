@@ -1,0 +1,95 @@
+<!DOCTYPE htm>
+<html lang="en">
+<head >
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #nav {
+        width: 500px;
+        height: 40px;
+        background: #ccc;
+        margin: 0 auto;
+    }
+
+    ul {
+        background: #aaa
+    }
+
+    ul li {
+        float: left;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    ul li:hover {
+        background: #cea;
+    }
+
+    ul li ul li {
+        float: none;
+    }
+
+    ul li ul {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: none;
+    }
+
+    ul li ul li:hover {
+        background: red;
+    }
+    ul li ul li img{
+        width: 120px;
+        height: 120px;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+    }
+</style>
+<div id="nav">
+<ul>
+    <li><a href="#">首页</a></li>
+    
+    <li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">汽车</a>
+        <!-- 关键一：在二级标题从属的一级标题标签内设置时间执行程序，this代表的时这个li元素 -->
+        <dl>
+            <dt><img src="./img/ia_200000019.png" alt=""></dt>
+       
+        </dl>
+    </li>
+<!-- <li onmouseover="show(this)" onmouseout="hide(this)"><a href="#">手机</a> -->
+<ul>
+<li><a href="#">小米</a> </li>
+<li><a href="#">华为</a> </li>
+</ul>
+</li>
+<li><a href="#">联系我们</a></li>
+</ul>
+</div> 
+<script>
+function show(){
+
+// var ul= document.getElementsByTagName("dt")[0];
+var a = document.getElementsByTagName("dt")[0];
+// 关建二：在li这个对象内查询标签名为ul的标签，由于二级标签只有一个，所以索引为0即可。
+a.style.display="block";
+// 关键三：当鼠标划过li时，其子元素ul标签的display为block
+}
+function hide(){
+   var a = document.getElementsByTagName("dt")[0];
+  a.style.display="none";
+// 关键四：当鼠标划出li时，其子元素ul的display为none
+}
+</script>

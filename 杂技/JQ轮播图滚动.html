@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul li {
+				list-style: none;
+				width: 550px;
+				height: 250px;
+				float: left;
+				background-size: 100% 100%;
+			}
+
+			ul li:nth-child(1) {
+				background-image: url(img/ia_200000019.png);
+			}
+
+			ul li:nth-child(2) {
+				background-image: url(img/ia_200000020.png);
+			}
+
+			ul li:nth-child(3) {
+				background-image: url(img/ia_200000021.png);
+			}
+
+			ul li:nth-child(4) {
+				background-image: url(img/ia_200000023.png);
+			}
+
+			ul li:nth-child(5) {
+				background-image: url(img/ia_200000024.png);
+			}
+
+			ul li:nth-child(6) {
+				background-image: url(img/ia_200000026.jpg);
+			}
+
+			ul {
+				position: absolute;
+			
+				height: 250px;
+				background: red;
+			}
+
+			div {
+				width: 550px;
+				height: 250px;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto;
+				background: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		let oul = $("ul");
+		let oli = oul.find("li");
+		let index = 0;
+		let time = null;
+		
+		function change(){
+			oul.animate({
+				left : -550 * index
+			},500,function(){
+				if(index == oli.length-1){
+					index = 0;
+					oul.css({left:0})
+				}
+			})
+		}
+		
+		time = setInterval(function(){
+			index++;
+			change();
+		},5000);
+		
+		$("div").mouseover(function(){
+			clearInterval(time);
+		})
+		
+		$("div").mouseout(function(){
+			time = setInterval(function(){
+				index++;
+				change();
+			},5000);
+		})
+	});
+</script>

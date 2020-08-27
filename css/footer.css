@@ -1,0 +1,205 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        i,
+        em {
+            font-style: normal;
+        }
+
+        b,
+        strong {
+            font-weight: normal;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        img {
+            vertical-align: middle;
+            border: none;
+        }
+        .footer{
+            width: 1243px;
+            height: 144px;
+            /* background-color: chartreuse; */
+            margin: 0 auto;
+            /* position: relative; */
+            border: 1px solid red;
+        }
+        .footer-left{
+            width: 901px;
+            height: 144px;
+            /* background:red; */
+            float: left;
+        }
+       
+        .footer-left dl{
+            width: 900px;
+            height: 144px;
+            /* background:burlywood; */
+            position: relative;
+        }
+        .footer-left dl dt{
+            float: left;
+            width: 150px;
+            height: 94px;
+            /* background: blueviolet; */
+            /* border: 1px solid black; */
+            padding-top: 50px;
+        
+         }
+         .footer-left dl dt img{
+             width: 40px;
+             height:40px;
+             margin-left: 55px;
+           
+         }
+         .footer-left dl dt p{
+             margin-top: 8px;
+             font-size: 12px;
+             text-align: center;
+         }
+
+         .footer-right{
+            width: 342px;
+            height: 144px;
+            /* background: yellow; */
+            float: right;
+            position: relative;
+        }
+        .footer-right span{
+            position: absolute;
+            right: 0;
+            top: 40px;
+            font-size: 14px;
+        }
+        .footer-right h3{
+            position: absolute;
+            font-size: 18px;
+            color:blue;
+            top:65px;
+            right: 0;
+        }
+        .footer-right input{
+            position: absolute;
+            border-radius: 5px;
+            background:blue;
+            color: white;
+            font-size: 14px;
+            width: 90px;
+            height: 30px;
+            right: 0;
+            top: 98px;
+        }
+        .footer1{
+            width: 1243px;
+            height:49px;
+            margin: 0 auto;
+        }
+        .footer1-l{
+            width:1243px;
+            height:49px;
+            /* background:gold; */
+            float: left;
+        }
+         .footer1-l li{
+            float: left;
+           margin-top: 30px;
+            font-size: 12px;
+            color: #989a8c;
+        } 
+        .footer1-l li:hover{
+            color: blue;
+            cursor:pointer;
+        }
+        .footer1-l li:last-child img{
+            width: 15px;
+            height: 15px;
+        }
+       .footer1-l span{
+           float: left;
+           margin:0 15px;
+           color: #989a8c;
+           margin-top: 29px;
+       } 
+       .footer2{
+           width: 1243px;
+           height: 55px;
+           /* background-color: burlywood; */
+           margin: 0 auto;
+       }
+       .footer2 .footer2-l{
+           width: 970px;
+           /* height: 55px; */
+           /* background: blueviolet; */
+           color: #a09eab;
+           font-size: 12px;
+          padding-top: 16px;
+          cursor: pointer;
+          float: left;
+       }
+       .footer2 .footer2-l span{
+           float: left;
+       }
+       .footer2 .footer2-l li{
+        float: left;
+        margin-right: 8px;
+       }
+       .footer2 .footer2-l dl dt{
+           width: 13px;
+           height: 16px;
+           display: inline;
+       }
+
+       
+       .footer2 .footer2-l li a{
+        color: #a09eab;
+       }
+       .footer2 .footer2-l li a:hover{
+            color:blue;
+       }
+
+
+       .footer2-r{
+           /* background:greenyellow; */
+           width:273px;
+           /* height: 55px; */
+           float: left;
+       }
+       .footer2-r li{
+           float: left;
+           margin-top: 10px;
+       }
+       .footer2-r li img{
+           width: 18px;
+           height: 18px;
+       }
+       .footer2-r span{
+           border-right: 1px solid black;
+           width: 1px;
+           height: 15px;
+           margin: 0 10px;
+          
+       }
+    
+       .footer2-r li:nth-of-type(1) img{
+           margin-left: 110px;
+       }

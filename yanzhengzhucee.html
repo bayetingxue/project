@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/zhuce.css">
+</head>
+<body>
+    <div class="zclogo">
+        <a href="#"><img src="./img/ia_100000000.png" alt=""></a>
+    </div>
+    <div class="zcbj">
+        <img src="./img/xqbj.png" alt="">
+    </div>
+
+    <div class="zckuang">
+        <div class="computer">
+            <a href="#"><img src="./img/015.png" alt=""></a>
+        </div> 
+        <h3>验证码登录</h3>
+        <div class="phone">
+            <span>
+                <select>
+                <option>常用</option>
+                <option selected>+86</option>
+                <option>中国香港</option>
+                <option">中国台湾</option>
+                 <option>中国</option>
+                </select>
+                <i>|</i>
+            </span>
+
+            <!-- 表单 -->
+          
+            <input type="text" placeholder=手机号 class="yanzhengdenglu"
+            name="username">
+            <span id="yanzheng">
+               
+            </span> 
+        
+
+        </div>
+      <!-- 登录 -->
+        <input type="button" value="登录" id="btn">
+
+            <!-- 注册忘记密码 -->
+        <div class="xiamian">
+            <a href="#">注册</a>
+            <a href="#">忘记密码?</a>
+        </div>
+
+
+    </div>
+
+<div class="zcfooter">
+    <div class="zcfooter-1">
+        <ul>
+            <li><a href="#">
+                    关于魅族</a></li>
+                 <span></span>
+            <li><a href="#">
+                    工作机会 </a></li>
+                    <span></span>
+            <li><a href="#">
+                     联系我们</a></li><span></span>
+            <li><a href="#">
+                    法律声明</a></li><span></span>
+            <li><a href="#">
+                    常见问题</a></li><span></span>
+            <li class="zhongwen">
+                <a href="#" >简体中文</a>
+                <!-- <p class="icon"></p> -->
+                <dl>
+                    <dt><a href="#">简体中文</a></dt>
+                    <dt><a href="#">English</a></dt>
+                </dl>
+            </li>
+    
+
+        </ul>
+    </div>
+
+    <div class="zcfooter-2">
+        <span>客服热线</span>
+        <p>400-788-3333</p>
+            <a href="#">
+                <div class="zxkf">
+                    <p>在线客服</p>  
+                </div>
+            </a>
+    </div>
+
+    <div class="zcfooter-3">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+    </div >
+
+    <div class="zcfooterfooter">
+        <p>
+            ©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+            备案号: 粤ICP备13003602号-4
+            经营许可证编号: 粤B2-20130198
+            营业执照 </p>
+
+            <p>
+                
+                <img src="./img/008.png" alt="">
+                    粤公网安备 44049102496076号
+
+            </p>
+    </div>
+
+    
+   
+</body>
+</html>
+<script>
+   //纯数字d
+    // var regNum = /^\d+$/;
+    // 手机号为11-13位数字
+    var regNum = /^\d{11,13}$/;
+
+    // //包含数字
+	// var _regNum = /\d+/;
+   
+	let flagpwd=false;
+    var oDenglu = document.querySelector(".yanzhengdenglu");
+    var oYanzheng = document.querySelector("#yanzheng");
+    oDenglu.onblur = function(){
+        if(regNum.test(oDenglu.value)){
+            oYanzheng.innerHTML='可以';
+            flagpwd=true;
+        }else{
+            oYanzheng.innerHTML='请输入正确格式';
+            flagpwd=false;
+        }
+    }
+
+    // ajax
+    let oBtn = document.querySelector("#btn");
+
+     oBtn.onclick = function(){
+        if(flagpwd){
+            //1
+             let xhr=new XMLHttpRequest();
+             //2
+             xhr.open("POST","zhuce.php",true);
+            //请求头,将数据以form表单的方式(post)传参
+		    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            //4
+            xhr.onreadystatechange=function(){
+			 if(xhr.status==200&&xhr.readyState==4){
+                 //5
+				 fun(xhr.responseText)
+			 }
+         }
+         //3
+         xhr.send("username="+oDenglu.value);
+        }
+
+        //php与ajax连用时,echo返回的是xhr.responseText的数据
+        function fun(str){
+            if(str=="1"){
+                alert('手机号码已经注册,请直接登录')
+                
+                
+            }else if(str=="0"){
+                confirm("注册成功")
+            }
+
+        }
+    }
+
+</script>

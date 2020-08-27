@@ -1,0 +1,102 @@
+
+             * {
+                margin: 0;
+                padding: 0;
+            }
+    
+            li {
+                list-style: none;
+            }
+    
+            a {
+                text-decoration: none;
+            }
+    
+            i,
+            em {
+                font-style: normal;
+            }
+    
+            b,
+            strong {
+                font-weight: normal;
+            }
+    
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 16px;
+                font-weight: normal;
+            }
+    
+            img {
+                vertical-align: middle;
+                border: none;
+            }
+        body{
+            overflow-x: hidden;
+           
+        }
+        .banner ul li{
+            list-style: none;
+            width:2560px;
+            margin: auto;
+            height: 680px;
+            background-size: 100% 100%;
+            float: left;
+        }
+       
+        .banner ul li:nth-child(1){
+            background-image: url(../img/ia_200000006.jpg );
+            background-position: center center;
+          
+        }
+        .banner ul li:nth-child(2){
+            background-image: url(../img/ia_200000007.jpg);
+           
+        }
+        .banner ul li:nth-child(3){
+            background-image: url(../img/ia_200000008.jpg);
+           
+        }
+        .banner ul li:nth-child(4){
+            background-image: url(../img/ia_200000009.jpg);
+           
+        }
+        .banner  ul li:nth-child(5){
+            background-image: url(../img/ia_200000010.jpg);
+          
+        }
+        .banner ul li:nth-child(6){
+            background-image: url(../img/ia_200000011.jpg);
+           
+        }
+        .banner ul li:nth-child(7){
+            background-image: url(../img/ia_200000012.jpg);
+        }
+        .banner ul li:nth-child(8){
+            background-image: url(../img/ia_200000013.jpg);
+           
+        }
+        .banner ul li:nth-child(1){
+            background-image: url(../img/ia_200000006.jpg);
+            
+        }
+        .banner ul{
+            position: absolute;
+            height: 680px;
+          
+            /* background: red; */
+        }
+        .banner{
+            width: 2560px;
+            height: 680px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            
+        }
+  

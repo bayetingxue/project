@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+/* body{
+    background-image: url(../img/xqbj.png);
+} */
+
+.zclogo{
+    width: 100%;
+    height: 68px;
+    /* background: red; */
+}
+
+.zclogo img{
+    width: 100px;
+    height: 36px;
+    margin-top:16px;
+    margin-left: 50px;
+  
+}
+.zcbj img{
+    width: 100%;
+    position: relative;
+}
+.zckuang{
+    width: 350px;
+    height:300px;
+    background:white;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    top: 300px;
+    left:1000px;
+}
+.zckuang .computer img{
+    margin-left:315px;
+}
+.zckuang h3{
+    font-size:25px;
+    text-align: center;
+    margin-top: 50px;
+}
+.phone{
+    width:300px;
+    height: 36px;
+    /* border: 1px solid black; */
+     margin-left: 25px;
+     margin-top: 30px;
+     line-height: 36px;
+     position: relative;
+
+}
+/* 外线取消不掉 */
+.phone input{
+    outline: none;
+}
+.phone #yanzheng{
+    width: 300px;
+    height: 36px;
+    background: red;
+    opacity: 1;
+    position: absolute;
+    left: 0;top:-36px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#btn{
+    width: 300px;
+    height: 36px;
+    background: blue;
+    color: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top:30px;
+    line-height: 36px;
+}
+.xiamian{
+    width: 300px;
+    height: 36px;
+    /* background: chartreuse; */
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 36px;
+}
+.xiamian a:nth-of-type(2){
+    float: right;
+}
+
+/* footer */
+.zcfooter{
+    height: 150px;
+   width: 1244px;
+   margin: 0 auto;
+    /* background: blueviolet; */
+}
+.zcfooter-1{
+    height: 75px;
+    width: 500px;
+    /* background: burlywood; */
+    float: left;
+   
+    
+   
+}
+.zcfooter-1 li{
+    float: left;
+     margin-top: 20px; 
+}
+.zcfooter-1 li a{
+    color: black;
+}
+.zcfooter-1 span{
+    border-right: 1px solid black;
+    height: 12px;
+    float: left;
+   
+    margin: 25px 10px 0 10px;
+}
+.zhongwen{
+    position: relative;
+}
+/* 精灵图没弄好 */
+/* .zhongwen .icon{
+    display: inline;
+    background-image: url(../img/003.png) ;
+    background-position: -137px -3px;
+    
+} */
+.zhongwen dl{
+    width: 80px;
+    height: 100px;
+    display: none;
+    background: red;
+    position: absolute;
+    top: -100px;left: 0;
+    line-height: 50px;
+}
+.zhongwen:hover dl{
+    width: 80px;
+    height: 100px;
+    display: block;
+    background: red;
+    position: absolute;
+    top: -100px;left: 0;
+    line-height: 50px;
+}
+
+.zhongwen dl dt{
+    width: 80px;
+    height: 50px;
+}
+.zhongwen dl dt:nth-of-type(1){
+    border-bottom: 1px solid black;
+}
+
+.zcfooter-2{
+    height: 75px;
+    width: 350px;
+    /* background-color:wheat; */
+    float: left;
+   
+}
+.zcfooter-2 span{
+    margin-left: 20px;
+    line-height:75px;
+    float: left;
+}
+.zcfooter-2 p{
+    line-height:75px;
+    float: left;
+    margin-left: 20px;
+
+}
+.zcfooter-2 .zxkf{
+    width: 70px;
+    height:30px;
+    background: blue;
+    border-radius: 5px;
+    float: left;
+    margin-top: 22.5px;
+    margin-left: 25px;
+    position: relative;
+}
+.zcfooter-2 .zxkf p{
+   font-size: 10px;
+   color: white;
+   position: absolute;
+   top: -22px;left:-5px;
+}
+.zcfooter-3{
+    width:394px;
+    height:75px;
+    background: violet;
+    float: left;
+}
+
+
+.zcfooter-3 li:nth-of-type(1){
+    background:url(../img/006.png);
+    background-position: -218px -100px;
+}
+
+.zcfooterfooter{
+    width: 1244px;
+    height: 75px;
+    /* background: turquoise; */
+    float: left;
+}
+
+.zcfooterfooter p{
+    line-height: 75px;
+    font-size: 12px;
+    float: left;
+}
+.zcfooterfooter p:nth-child(2) img{
+    margin-left: 20px;
+}

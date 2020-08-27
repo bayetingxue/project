@@ -1,0 +1,1022 @@
+       * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        i,
+        em {
+            font-style: normal;
+        }
+
+        b,
+        strong {
+            font-weight: normal;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        img {
+            vertical-align: middle;
+            border: none;
+        }
+        body{
+            background:#f4f4f4 ;
+        }
+        .disan{
+            width: 1244px;
+            height: 280px;
+            margin: 0 auto;
+            /* background: red; */
+           
+        }
+        .disan dl{
+            width: 311px;
+            height: 280px;
+            /* background: lightcoral; */
+            float: left;
+            cursor: pointer;
+        }
+        .disan dl img{
+         width: 110px;
+         height: 110px;
+         margin-left: 100px;
+         margin-top: 60px;
+        }
+        .disan dl dt span{
+            display:block;
+            margin:20px 0 8px 100px;
+            font-size: 20px;
+        }
+        .disan dl dt p{
+            margin:20px 0 0 105px;
+            font-size: 12px;
+            color: #969992;
+        }
+        .disan dl:hover img{
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+        }
+        .disan dl dt a{
+            color: black;
+        }
+        
+        /* 手机 */
+        .phone{
+            height: 106px;
+            width: 100%;
+            /* background: #f4f4f4; */
+        }
+        .phone h3{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 60px;
+        }
+       .phone-banner{
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+       }
+
+        .phone-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+            
+        }
+      
+        .phone-banner img:hover{
+           opacity: 0.8;
+           filter: alpha(opacity=50);
+        }
+
+        .meizu17{
+            width: 1244px;
+            height:620px;
+            margin: 0 auto;
+            /* background: chartreuse; */
+            padding-top: 12px;
+        }
+        .meizu171{
+            width: 615px;
+            height: 605px;
+           
+            float: left;
+            position: relative;
+            background: #ffffff;
+        }
+        .meizu171:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .meizu171-new{
+            width: 60px;
+            height: 60px;
+            /* background: red; */
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+           
+        }
+       
+        .meizu171 h3{
+            text-align: center;
+            color: #363636;
+            font-size: 28px;
+            margin-top: 64px;
+        }
+        .meizu171 p {
+            text-align: center;
+            color: #363636;
+            margin: 15px 0; 
+        }
+        .meizu171 span{
+            display: block;
+            color: red;
+            text-align: center;
+            font-size: 16px;
+        }
+        .meizu171 img{
+            width: 260px;
+            height: 387px;
+            margin-left: 150px;
+        }
+        .meizu172{
+            width: 615px;
+            height: 605px;
+           
+            float: right;
+            background: #ffffff;
+        }
+        .meizu172:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .meizu172 h3{
+            text-align: center;
+            color: #363636;
+            font-size: 28px;
+            margin-top: 64px;
+        }
+        .meizu172 p {
+            text-align: center;
+            color: #363636;
+            margin: 15px 0; 
+        }
+        .meizu172 span{
+            display: block;
+            color: red;
+            text-align: center;
+            font-size: 16px;
+        }
+        .meizu172 img{
+            width: 260px;
+            height: 387px;
+            margin-left: 150px;
+        }
+        .meizuxiaosi{
+            width: 1244px;
+            height: 380px;
+            /* background: red; */
+            margin: 0 auto;
+          
+        }
+       
+       
+        .meizuxiaosi dl{
+            float: left;
+            width: 303px;
+            background: #ffffff;
+            text-align: center;
+            margin-top: 52px;
+            margin-right: 7px;
+        }
+        .meizuxiaosi dl:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .meizuxiaosi dl:nth-of-type(4){
+            margin-right: 0;
+        }
+     
+        .meizuxiaosi img{
+            width: 180px;
+            height: 200px;
+            margin-bottom: 29px;
+        }
+        .meizuxiaosi  h4{
+            font-size: 14px;
+
+        }
+        .meizuxiaosi p{
+            font-size: 12px;
+            color: #939a92;
+        }
+        .meizuxiaosi dd{
+            font-size: 17px;
+            color: red;
+        }
+        /* 魅族声学 */
+        .sound{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .sound h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+        .sound-banner{
+            position: relative;
+            height: 450px;
+           
+        }
+        .sound-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+        }
+        .sound-banner:hover img{
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+        }
+
+        .xiao12{
+            width: 1244px;
+            height: 1147px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .xiao12 dl{
+            width: 303px;
+            height:375px;
+            /* background: coral; */
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .xiao12 dl:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .xiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .xiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .xiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .xiao12da  img{
+            width: 303px;
+            height: 375px;
+        }
+       
+        .xiao12 .xiao12da h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .xiao12 .xiao12da p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: white;
+        }
+        .xiao12 .xiao12da dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        .xiao12xx{
+            text-align: center;
+         }
+         .xiao12xx img{
+             width: 180px;
+             height: 180px;
+         
+         }
+         .xiao12 .xiao12xx h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color:black;
+
+        }
+        .xiao12 .xiao12xx p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color:black;
+        }
+        .xiao12 .xiao12xx dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+        /* 配件 */
+        .peijian{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .peijian h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+        .peijian-banner{
+            position: relative;
+            height: 450px;
+           
+        }
+        .peijian-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+        }
+        .peijian-banner img:hover{
+            opacity: 0.8;
+            filter:alpha(opacity=50);
+           
+        }
+
+        .xxiao12{
+            width: 1244px;
+            height: 1147px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .xxiao12 dl{
+            width: 303px;
+            height:375px;
+            /* background:#fff; */
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .xxiao12 dl:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .xxiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .xxiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .xxiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .xxiao12da  img{
+            width: 303px;
+            height: 375px;
+        }
+       
+        .xxiao12 .xxiao12da h4{
+            position: absolute;
+            left:80px;
+            top:280px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .xxiao12 .xxiao12da p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: white;
+        }
+        .xxiao12 .xxiao12da dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        .xxiao12xx{
+            text-align: center;
+         }
+         .xxiao12xx img{
+             width: 180px;
+             height: 180px;
+         
+         }
+         .xxiao12 .xxiao12xx h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color:black;
+
+        }
+        .xxiao12 .xxiao12xx p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color:black;
+        }
+        .xxiao12 .xxiao12xx dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        /* 魅族声学 */
+        .sound{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .sound h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+        .sound-banner{
+            position: relative;
+            height: 450px;
+           
+        }
+        .sound-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+        }
+        .sound-banner img:hover{
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+          
+        }
+
+        .xiao12{
+            width: 1244px;
+            height: 1147px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .xiao12 dl{
+            width: 303px;
+            height:375px;
+            /* background: coral; */
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .xiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .xiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .xiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .xiao12da  img{
+            width: 303px;
+            height: 375px;
+        }
+       
+        .xiao12 .xiao12da h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .xiao12 .xiao12da p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: white;
+        }
+        .xiao12 .xiao12da dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        .xiao12xx{
+            text-align: center;
+         }
+         .xiao12xx img{
+             width: 180px;
+             height: 180px;
+         
+         }
+         .xiao12 .xiao12xx h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color:black;
+
+        }
+        .xiao12 .xiao12xx p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color:black;
+        }
+        .xiao12 .xiao12xx dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+        /* 配件 */
+        .peijian{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .peijian h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+        .peijian-banner{
+            position: relative;
+            height: 450px;
+           
+        }
+        .peijian-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+        }
+        .peijian-banner img:hover{
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+           
+        }
+
+        .xxiao12{
+            width: 1244px;
+            height: 1147px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .xxiao12 dl:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .xxiao12 dl{
+            width: 303px;
+            height:375px;
+            background: #ffffff;
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .xxiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .xxiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .xxiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .xxiao12da  img{
+            width: 303px;
+            height: 375px;
+        }
+       
+        .xxiao12 .xxiao12da h4{
+            position: absolute;
+            left:80px;
+            top:280px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .xxiao12 .xxiao12da p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: white;
+        }
+        .xxiao12 .xxiao12da dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        .xxiao12xx{
+            text-align: center;
+         }
+         .xxiao12xx img{
+             width: 180px;
+             height: 180px;
+         
+         }
+         .xxiao12 .xxiao12xx h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color:black;
+
+        }
+        .xxiao12 .xxiao12xx p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color:black;
+        }
+        .xxiao12 .xxiao12xx dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+        /* 生活周边 */
+        
+        .zhoubian{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .zhoubian h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+        .zhoubian-banner{
+            position: relative;
+            height: 450px;
+           
+        }
+        .zhoubian-banner img{
+            position: absolute;
+            left: 50%;
+            margin-left: -1280px;
+        }
+        .zhoubian-banner:hover img{
+            opacity: 0.8;
+          filter: alpha(opacity=50);
+           
+        }
+
+        .wiao12{
+            width: 1244px;
+            height: 1147px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .wiao12 dl{
+            width: 303px;
+            height:375px;
+            background: #ffffff;
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .wiao12 dl:hover{
+            box-shadow: 0px 5px 10px#3333;
+        }
+        .wiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .wiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .wiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .wiao12da  img{
+            width: 303px;
+            height: 375px;
+        }
+       
+        .wiao12 .wiao12da h4{
+            position: absolute;
+            left:25px;
+            top:280px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .wiao12 .wiao12da p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: white;
+        }
+        .wiao12 .wiao12da dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        .wiao12xx{
+            text-align: center;
+         }
+         .wiao12xx img{
+             width: 180px;
+             height: 180px;
+         
+         }
+         .wiao12 .wiao12xx h4{
+            position: absolute;
+            left:80px;
+            top: 270px;
+            font-size: 20px;
+            color:black;
+
+        }
+        .wiao12 .wiao12xx p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color:black;
+        }
+        .wiao12 .wiao12xx dd{
+            position: absolute;
+            left:120px;
+            top: 350px;
+            font-size: 18px;
+            color: #e9cb68;
+        }
+
+        /* 热帖 */
+        .retie{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .retie h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+      
+
+        .qiao12{
+            width: 1244px;
+            height:788px;
+            /* background: chartreuse; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .qiao12 dl{
+            width: 303px;
+            height:388px;
+            background: #ffffff;
+            position: relative;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .qiao12 dl:hover{
+            box-shadow: 0px 5px 10px #3333;
+        }
+       
+        .qiao12 dl:nth-of-type(4){
+            margin-right: 0;
+        }
+        .qiao12 dl:nth-of-type(8){
+            margin-right: 0;
+        }
+        .qiao12 dl:nth-of-type(12){
+            margin-right: 0;
+        }
+        .qiao12  img{
+            width: 303px;
+            height: 190px;
+        }
+       
+        .qiao12 h4{
+            position: absolute;
+            left:25px;
+            top:280px;
+            font-size: 20px;
+            color: black;
+
+        }
+        .qiao12 p{
+            position: absolute;
+            left:40px;
+            top:320px;
+            font-size: 12px;
+            color: #9b999c;
+        }
+         .qiao12 dd{
+            position: absolute;
+            left:60px;
+            top: 203px;
+            font-size: 18px;
+            color: black;
+        }
+        .qiao12 .small img{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            position: absolute;
+            margin: 10px;
+        }
+
+       
+        /* Flyme */
+        .flyme{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .flyme h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+
+        .xiaoqi{
+            width: 1244px;
+            height: 247px;
+            /* background:grey; */
+            margin: 0 auto;
+        }
+        .xiaoqi-l{
+            width: 615px;
+            height: 247px;
+            /* background: brown; */
+            float: left;
+            margin-right: 9px;
+        }
+        .xiaoqi-l:hover img{
+            box-shadow: 0px 5px 5px #333333;
+        }
+        
+        .xiaoqi-l img{
+            width: 615px;
+            height: 247px;
+          
+        }
+        .xiaoqi-r{
+            width: 620px;
+            height: 247px;
+            /* background:red; */
+            float: left;
+        }
+        .xiaoqi-r-1:hover img{
+            box-shadow: 0px 5px 5px #333333;
+        }
+        .xiaoqi-r-2:hover img{
+            box-shadow: 0px 5px 5px #333333;
+        }
+        .xiaoqi-r img{
+            width: 303px;
+            height: 247px;
+            float: left;
+            margin-right:9px;
+        }
+        .xiaoqi-r-2 img{
+            margin-right: 0px;
+        }
+
+
+        /* qixiaosi */
+        .qixiasi{
+            width: 1244px;
+            height: 246px;
+            /* background: lightblue; */
+            margin: 0 auto;
+        }
+        .qixiasi dl{
+            width: 304px;
+            height: 246px;
+            /* background: green; */
+            float: left;
+            margin-right:9px;
+            margin-top: 16px;
+        }
+        .qixiasi dl:hover img{
+           box-shadow: 0px 5px 5px #333333;
+        }
+        .qixiasi dl img{
+            height: 192px;
+            width: 304px;
+         
+        }
+        .qixiasi p{
+            text-align: center;
+           margin-top: 20px;
+           font-size: 16px;
+           color:black;
+        }
+    
+        .qixiasi dl:nth-child(4){
+            margin-right: 0px;
+        }
+
+        /* video  */
+        .ideo{
+            width: 100%;
+            height: 106px;
+            /* background: chartreuse; */
+        }
+        .ideo h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 56px;
+        }
+
+        .video {
+            width: 1244px;
+            height: 498px;
+           /* background: lightpink; */
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+     
+        .video dl{
+            width: 303px;
+            height: 244px;
+            /* background: blueviolet; */
+            float: left;
+            margin-right: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .video dl:hover{
+            box-shadow: 0px 5px 5px #333333;
+        }
+        .video .bfan img{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 265px;
+            top:150px;
+            color: white;
+            
+        }
+        .video dl img{
+            width: 303px;
+            height: 190px;
+        }
+        .video dl:nth-child(4){
+            margin-right: 0px;
+        }
+        .video dl:nth-child(8){
+            margin-right: 0px;
+        }
+        .video dl p{
+            color: #584c4c;
+            font-size: 12px;
+            line-height: 56px;
+            text-align: center;
+
+        }

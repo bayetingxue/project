@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        ul li{
+            list-style: none;
+            width:2560px;
+            height: 680px;
+            background-size: 100% 100%;
+            float: left;
+            margin: 0 auto;
+           
+          
+        }
+       
+        ul li:nth-child(1){
+            background-image: url(./img/ia_200000006.jpg);
+            
+
+        }
+        ul li:nth-child(2){
+            background-image: url(./img/ia_200000007.jpg);
+        }
+        ul li:nth-child(3){
+            background-image: url(./img/ia_200000008.jpg);
+        }
+        ul li:nth-child(4){
+            background-image: url(./img/ia_200000009.jpg);
+        }
+        ul li:nth-child(5){
+            background-image: url(./img/ia_200000010.jpg);
+        }
+        ul li:nth-child(6){
+            background-image: url(./img/ia_200000011.jpg);
+        }
+        ul li:nth-child(7){
+            background-image: url(./img/ia_200000012.jpg);
+        }
+        ul li:nth-child(8){
+            background-image: url(./img/ia_200000013.jpg);
+        }
+        ul li:nth-child(1){
+            background-image: url(./img/ia_200000006.jpg);
+        }
+        ul{
+            position: absolute;
+            height: 680px;
+          
+            /* background: red; */
+        }
+        div{
+            width: 2560px;
+            height: 680px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+    $(function(){
+        let oul = $("ul");
+        let oli = oul.find("li");
+        let index = 0;
+        let time =null;
+
+        function change(){
+            oul.animate({
+            left:-2560*index
+            },500,function(){
+                if(index==oli.length-1){
+                    index = 0;
+                    oul.css({left:0})
+                }
+            })
+        }
+ 
+    time = setInterval(function(){
+        index++;
+        change();
+    },5000);
+
+    $("div").mouseover(function(){
+        clearInterval(time);
+    })
+    $("div").mouseout(function(){
+        time = setInterval(function(){
+            index++;
+            change();
+        },5000);
+    })
+})
+</script>

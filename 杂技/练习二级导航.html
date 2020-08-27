@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            width: 800px;
+            height: 50px;
+            background-color: darkcyan;
+            margin: 20px auto;
+            line-height: 50px;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+        #nav ul li{
+            width: 160px;
+            float: left;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        .companyIntroduceUrl{
+            display: none;
+            width: 100%;
+            margin: 0 auto;
+            background: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+
+            <li onmouseover="onOver(this)"
+            onmouseout="onOut(this)">
+            <a href="#">公司介绍</a>
+            <ul class="companyIntroduceUrl">
+                <li><a href="#">走进我们</a></li>
+                <li><a href="#">悠久历史</a></li>
+                <li><a href="#">公司理念</a></li>
+                <li><a href="#">经理致辞</a></li>
+
+            </ul>
+
+            </li>
+            <li><a href="#">产品展示</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">招贤纳士</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
+<script>
+   function onOver(obj){
+   var a = obj.getElementsByTagName("ul");
+    a[0].style.display = "block";
+   }
+   function onOut(obj){
+      var b = obj.getElementsByTagName("ul");
+       b[0].style.display = "none";
+   }
+
+</script>
